@@ -1,22 +1,71 @@
-body {
+.page1body {
     display: flex;
     flex-flow: row wrap;
     margin: 0 auto;
     padding: 0;
-    background-color: #293d3d;
+    background-color: #333333;
     max-width: 1080px;
-    
+	justify-content: center;
+	color: white;
+}
+.popular,.show,.coment,footer,nav{
+	width: 100%;
+
 }
 .popular{
-	display: none;
+	margin-top: 5em;
+}
+/*##################nav#####################*/
+nav{
+	width: 100%;
+	top: -20em;
+	justify-content: flex-end;
+	overflow: hidden;
+	display: flex;
+	order: 1;
+	position: fixed;
+	background-color: #5c00e6;
+	color: white;
+	transition-duration: 1s;
+}
+nav ul{
+	width: 100%;
+	display: flex;
+	list-style-type:none;
+	flex-flow: row wrap;
+}
+nav li{
+	width: 100%;
+	padding: 1em;
+	transition-duration: 1s;
+	border-bottom: 1px solid #0d0d0d;
+}
+nav li:hover{
+	background-color: #751aff;
+}
+nav a{
+	color: white;
+	text-decoration: none;
+}
+#toggle{
+display: none;
+}
+label{
+	position: fixed;
+	display: flex;
+	order: 1;
+	background-color: #404040;
+	border-bottom: 1px solid #5c00e6;
+	
+	width: 100%;
+	padding: 2em;
+}
+input:checked ~ nav{
+	top: 5em;
 }
 @media screen and (min-width: 48em)  {
-.popular{
-	display: flex;
-}
+
 }
 @media screen and (min-width: 1080px)  {
-.popular{
-	display: none;
-}
+
 }
