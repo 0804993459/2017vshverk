@@ -1,0 +1,22 @@
+body {
+    display: flex;
+    flex-flow: row wrap;
+    margin: 0 auto;
+    padding: 0;
+    background-color: #293d3d;
+    max-width: 1080px;
+    
+}
+.popular{
+	display: none;
+}
+@media screen and (min-width: 48em)  {
+.popular{
+	display: flex;
+}
+}
+@media screen and (min-width: 1080px)  {
+.popular{
+	display: none;
+}
+}
