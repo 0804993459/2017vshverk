@@ -1,19 +1,16 @@
-.page1body {
+body {
     display: flex;
     flex-flow: row wrap;
     margin: 0 auto;
     padding: 0;
-    background-color: #333333;
+    background-color: #404040;
     max-width: 1080px;
 	justify-content: center;
 	color: white;
 }
-.popular,.show,.coment,footer,nav{
+footer{
 	width: 100%;
-
-}
-.popular{
-	margin-top: 5em;
+	background-color: #404040;
 }
 /*##################nav#####################*/
 nav{
@@ -43,6 +40,9 @@ nav li{
 nav li:hover{
 	background-color: #751aff;
 }
+nav li:focus{
+	background-color: #751aff;
+}
 nav a{
 	color: white;
 	text-decoration: none;
@@ -56,13 +56,26 @@ label{
 	order: 1;
 	background-color: #404040;
 	border-bottom: 1px solid #5c00e6;
-	
 	width: 100%;
-	padding: 2em;
+	padding: 1em;
 }
 input:checked ~ nav{
-	top: 5em;
+	top: 3em;
 }
+/*##################page 1#####################*/
+
+.popular,.show,.coment{
+	width: 100%;
+	background-color: #333333;
+}
+.popular{
+	margin-top: 3em;
+}
+.coment{
+	border-bottom: 1px solid #5c00e6;
+}
+
+
 @media screen and (min-width: 48em)  {
 
 }
