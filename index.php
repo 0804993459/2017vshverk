@@ -1,3 +1,15 @@
+<?php
+$servername = "tsuts.tskoli.is";
+$username = "0804993459";
+$password = "mypassword";
+$dbname = "0804993459_vsh2017v";
+
+// Create connection
+$conn = new mysqli($servername, $username, $password, $dbname);
+// Check connection
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+} ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -25,8 +37,33 @@
 <div class="show" id="s1">
 	<h1>rrrrrrrrrrrrr</h1><br>
 </div>
+<div class="seatl" id="s1">
+	<h1>lllllllllllllll</h1><br>
+</div>
 <div class="coment" id="s1">
-	<h1>aaaaaaaaaaaaa</h1><br>
+	<textarea>comment..</textarea><br>
+<div class="commentbox">
+<table>
+<?php
+
+$sql = "SELECT * FROM comments";
+$result = $conn->query($sql);
+echo "<tr><th>username : </th><th>comment : </th></tr> <tr> </tr>";
+if ($result->num_rows > 0) {
+    // output data of each row
+	while($row = $result->fetch_assoc()) {
+        echo  "<tr><td>". $row["user"]. "</td><td>". $row["comment"]. "</td></tr>";
+    }
+
+    
+} else {
+    echo "0 results";
+}
+
+$conn->close();
+?>
+</table>
+</div>
 </div>
 <footer>
 <h5>tæknemi® and all related logos and other elements are trademarks of tæknemi hf.

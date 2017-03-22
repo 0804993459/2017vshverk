@@ -64,7 +64,7 @@ input:checked ~ nav{
 }
 /*##################page 1#####################*/
 
-.popular,.show,.coment{
+.popular,.show,.coment,.seatl{
 	width: 100%;
 	background-color: #333333;
 }
@@ -72,7 +72,25 @@ input:checked ~ nav{
 	margin-top: 3em;
 }
 .coment{
+
 	border-bottom: 1px solid #5c00e6;
+}
+textarea {
+  width: 99%;
+  height: 150px;
+}
+th, td {
+	border-right: 1px solid black;
+	border-bottom: 1px solid black;
+}
+.commentbox {
+  border: 1px solid #a6a6a6;
+  border-radius: 10px;
+  background-color: #737373;
+  width: 100%;
+}
+.seatl{
+	display: none;
 }
 
 
@@ -87,6 +105,15 @@ input:checked ~ nav{
 label{
 	padding: 2em;
 }
+.seatl{
+	display: flex;
+	width: 25%;
+	border-bottom: 1px solid #5c00e6;
+}
+.coment{
+	width: 75%;
+	border-bottom: 1px solid #5c00e6;
+}
 
 }
 @media screen and (min-width: 1080px)  {
@@ -97,9 +124,8 @@ nav{
 	top: 0em;
 	justify-content: flex-start;
 }
-
 nav li{
-	width: 22.2%;
+	width: 21%;
 	padding-bottom: 0,5em;
 }
 }
