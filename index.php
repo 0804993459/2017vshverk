@@ -31,17 +31,42 @@ if ($conn->connect_error) {
 				<li class="v4">FERILL</li></a>
 			</ul>	
 		</nav>
-<div class="popular" id="s1">
+<div class="popular">
 	<h1>bbbbbbbbbbbbbb</h1><br>
 </div>
-<div class="show" id="s1">
-	<h1>rrrrrrrrrrrrr</h1><br>
+<div class="show">
+	<table>
+
+<?php
+
+$sql = "SELECT * FROM vidburdur";
+$result = $conn->query($sql);
+echo "<thead><tr><th> viðburðs típa: </th><th>Host : </th><th>dagsetning : </th></tr></thead> <tr> </tr>";
+if ($result->num_rows > 0) {
+    // output data of each row
+    
+	while($row = $result->fetch_assoc()) {
+        echo  "<tr><td>". $row["vidburds tipa"]. "</td><td>". $row["NAFN"]. "</td><td>". $row["DAGSET"]. "</td></tr>";
+    }
+      
+} else {
+    echo "0 results";
+}
+
+?>
+</table>
 </div>
-<div class="seatl" id="s1">
+<div class="seatl">
 	<h1>lllllllllllllll</h1><br>
 </div>
-<div class="coment" id="s1">
-	<textarea>comment..</textarea><br>
+<div class="coment">
+
+<form action="input.php" method="post">
+	<textarea name="lysing" rows="10" cols="30" >comment</textarea>
+	<input type="text" name="nafn" value="nafn">
+	<input type="submit" value="submit" >
+</form>
+
 <div class="commentbox">
 <table>
 <?php
