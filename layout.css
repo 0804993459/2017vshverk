@@ -26,13 +26,14 @@ nav{
 	transition-duration: 1s;
 }
 nav ul{
+
 	width: 100%;
 	display: flex;
 	list-style-type:none;
 	flex-flow: row wrap;
 }
 nav li{
-	width: 100%;
+	
 	padding: 1em;
 	transition-duration: 1s;
 	border-bottom: 1px solid #0d0d0d;
@@ -44,6 +45,7 @@ nav li:focus{
 	background-color: #751aff;
 }
 nav a{
+	width: 100%;
 	color: white;
 	text-decoration: none;
 }
@@ -64,7 +66,7 @@ input:checked ~ nav{
 }
 /*##################page 1#####################*/
 
-.popular,.show,.coment,.seatl{
+.popular,.show,.coment,.seatl,.heppni{
 	width: 100%;
 	background-color: #333333;
 }
@@ -89,20 +91,25 @@ th, td {
   width: 100%;
 }
 .seatl{
-	display: none;
+	width: 66%;
+	border-right: 1px solid #5c00e6;
 }
-.show{
- border: 1px solid #a6a6a6;
-  border-radius: 10px;
-  background-color: white;
-  width: 100%;
+.heppni{
+	width: 33%;
+	padding-left: 6.5px;
+}
+.show thead{
+	background-color: #666666;
 }
 .show tbody{
-	height: 170px;
+	border: 1px solid #a6a6a6;
+  border-radius: 10px;
+  background-color: #737373;
+	height: 100px;
     overflow-y: auto;
 }
 table{
-	width: 300px;
+	width: 100%;
 }
 
 
@@ -117,18 +124,14 @@ input:checked ~ nav{
 label{
 	padding: 2em;
 }
-.seatl{
-	display: flex;
-	width: 25%;
-	border-bottom: 1px solid #5c00e6;
-}
+
 .coment{
-	width: 75%;
+	width: 100%;
 	border-bottom: 1px solid #5c00e6;
 }
 
 }
-@media screen and (min-width: 1080px)  {
+@media screen and (min-width: 60em)  {
 label{
 	display: none;
 }
@@ -137,7 +140,14 @@ nav{
 	justify-content: flex-start;
 }
 nav li{
-	width: 21%;
-	padding-bottom: 0,5em;
+	padding: 1em;
 }
+nav ul{
+	padding-left: 0;
+	justify-content: center;
+
+}
+nav a{
+	width: 21%;
+	
 }

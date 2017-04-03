@@ -25,14 +25,14 @@ if ($conn->connect_error) {
     <label for="toggle">&#9776; menu</label>
 		<nav>
 			<ul>
-				<li class="v1">HEIMASIDA</li></a>
-				<li class="v2">FORRIT</li></a>
-				<li class="v3">UM OKKUR</li></a>
-				<li class="v4">FERILL</li></a>
+				<a href="http://tsuts.tskoli.is/2t/0804993459/2017vshverk"><li class="v1">HEIMASIDA</li></a>
+				<a href="https://nam.inna.is/Components/Students/Students.html#/StudentInfo"><li class="v2">INNA</li></a>
+				<a href="https://github.com/0804993459/2017vshverk"><li class="v3">GITHUB</li></a>
+				<a href=""><li class="v4">UPPLÝSINGAR</li></a>
 			</ul>	
 		</nav>
 <div class="popular">
-	<h1>bbbbbbbbbbbbbb</h1><br>
+	<h1>hér er heima síða hákatonia</h1><br>
 </div>
 <div class="show">
 	<table>
@@ -57,7 +57,20 @@ if ($result->num_rows > 0) {
 </table>
 </div>
 <div class="seatl">
-	<h1>lllllllllllllll</h1><br>
+	<h1>skra a vidburd</h1><br>
+	<form action="sining.php" method="post">
+	<input type="text" name="nafn" value="nafn">
+	<input type="text" name="vidburdur" value="vidburdur">
+	<input type="submit" value="submit" >
+</form>
+</div>
+<div class="heppni">
+	<h2>skra i lotto</h2><br>
+	<form action="lotto.php" method="post">
+	<input type="text" name="nafn" value="nafn">
+	<input type="text" name="email" value="email">
+	<input type="submit" value="submit" >
+</form>
 </div>
 <div class="coment">
 
