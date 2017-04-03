@@ -28,7 +28,7 @@ if ($conn->connect_error) {
 				<a href="http://tsuts.tskoli.is/2t/0804993459/2017vshverk"><li class="v1">HEIMASIDA</li></a>
 				<a href="https://nam.inna.is/Components/Students/Students.html#/StudentInfo"><li class="v2">INNA</li></a>
 				<a href="https://github.com/0804993459/2017vshverk"><li class="v3">GITHUB</li></a>
-				<a href=""><li class="v4">UPPLÝSINGAR</li></a>
+				<a href="http://tsuts.tskoli.is/2t/0804993459/2017vshverk/nafnalisti.php"><li class="v4">NAFNALISTI</li></a>
 			</ul>	
 		</nav>
 <div class="popular">
