@@ -11,8 +11,7 @@ $conn = new mysqli($servername,$username,$password,$dbname);
 if ($conn->connect_error) {
 	die("Connection faild: ".$conn->connect_error);
 }
-
-$sql = "INSERT INTO orders(id,user,comment) VALUES (null,\"$nafn\",\"$lysing\")";
+$sql = "INSERT INTO orders(IDp,IDv)VALUES ((SELECT ID FROM persona WHERE NAFN = \"$nafn\"),(SELECT ID FROM vidburdur WHERE NAFN = \"$vidburdur\"));";
 if ($conn->query($sql) === TRUE) {
 	echo "New record created successfully";
 	echo "<a href=\"http://tsuts.tskoli.is/2t/0804993459/2017vshverk\">Fara til baka hérna</a>";

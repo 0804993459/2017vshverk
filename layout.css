@@ -91,12 +91,10 @@ th, td {
   width: 100%;
 }
 .seatl{
-	width: 66%;
-	border-right: 1px solid #5c00e6;
+	width: 100%;
 }
 .heppni{
-	width: 33%;
-	padding-left: 6.5px;
+	width: 100%;
 }
 .show thead{
 	background-color: #666666;
@@ -114,6 +112,14 @@ table{
 
 
 @media screen and (min-width: 48em)  {
+.seatl{
+	width: 66%;
+	border-right: 1px solid #5c00e6;
+}
+.heppni{
+	width: 33%;
+	padding-left: 6.5px;
+}
 .popular{
 	margin-top: 5em;
 }
