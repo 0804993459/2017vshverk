@@ -1,16 +1,15 @@
-body {
-    display: flex;
+body{
+	display: flex;
     flex-flow: row wrap;
     margin: 0 auto;
     padding: 0;
-    background-color: #404040;
+    background-color: #ffff99;
     max-width: 1080px;
 	justify-content: center;
-	color: white;
-}
-footer{
-	width: 100%;
-	background-color: #404040;
+	background-image: url('img/background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
 }
 /*##################nav#####################*/
 nav{
@@ -21,28 +20,25 @@ nav{
 	display: flex;
 	order: 1;
 	position: fixed;
-	background-color: #5c00e6;
+	background-color: rgba(221,121,9,0.88);
 	color: white;
 	transition-duration: 1s;
 }
 nav ul{
-
 	width: 100%;
 	display: flex;
 	list-style-type:none;
 	flex-flow: row wrap;
 }
 nav li{
-	
+	width: 100%;
 	padding: 1em;
 	transition-duration: 1s;
 	border-bottom: 1px solid #0d0d0d;
 }
 nav li:hover{
-	background-color: #751aff;
-}
-nav li:focus{
-	background-color: #751aff;
+	background-color: white;
+ color: rgb(188,102,7);
 }
 nav a{
 	width: 100%;
@@ -56,104 +52,73 @@ label{
 	position: fixed;
 	display: flex;
 	order: 1;
-	background-color: #404040;
-	border-bottom: 1px solid #5c00e6;
+	color: white;
+	background-color: rgb(188,102,7);
 	width: 100%;
 	padding: 1em;
+	justify-content: flex-end;
 }
 input:checked ~ nav{
 	top: 3em;
 }
-/*##################page 1#####################*/
-
-.popular,.show,.coment,.seatl,.heppni{
+/*##################nav end#####################*/
+/*##################index#####################*/
+.kynna{
 	width: 100%;
-	background-color: #333333;
-}
-.popular{
-	margin-top: 3em;
-}
-.coment{
-	border-bottom: 1px solid #5c00e6;
-}
-textarea {
-  width: 99%;
-  height: 150px;
-}
-th, td {
-	border-right: 1px solid black;
-	border-bottom: 1px solid black;
-}
-.commentbox {
-  border: 1px solid #a6a6a6;
-  border-radius: 10px;
-  background-color: #737373;
-  width: 100%;
-}
-.seatl{
-	width: 100%;
-}
-.heppni{
-	width: 100%;
-}
-.show thead{
-	background-color: #666666;
-}
-.show tbody{
-	border: 1px solid #a6a6a6;
-  border-radius: 10px;
-  background-color: #737373;
-	height: 100px;
-    overflow-y: auto;
-}
-table{
-	width: 100%;
-}
-
-
-@media screen and (min-width: 48em)  {
-.seatl{
-	width: 66%;
-	border-right: 1px solid #5c00e6;
-}
-.heppni{
-	width: 33%;
-	padding-left: 6.5px;
-}
-.popular{
-	margin-top: 5em;
-}
-
-input:checked ~ nav{
-	top: 5em;
-}
-label{
-	padding: 2em;
-}
-
-.coment{
-	width: 100%;
-	border-bottom: 1px solid #5c00e6;
-}
-
-}
-@media screen and (min-width: 60em)  {
-label{
-	display: none;
-}
-nav{
-	top: 0em;
-	justify-content: flex-start;
-}
-nav li{
 	padding: 1em;
+	padding-bottom: 2em;
+	padding-top: 3em;
+	background-color: rgba(243, 221, 114,0.8);
+	font-family: Indie Flower; 
+	text-align: center;
+	color: rgb(188,102,7);
 }
-nav ul{
-	padding-left: 0;
-	justify-content: center;
+.kynna img{
+		width: 100%;
+		height: auto;
+	}
+/*##################index end#####################*/
+/*##################verslun#####################*/
 
+/*##################verslun end#####################*/
+/*##################account#####################*/
+
+/*##################account end#####################*/
+/*##################uppls#####################*/
+.location{
+	width: 100%;
+	padding: 1em;
+	background-color: rgba(243, 221, 114,0.8); 
+	color: rgb(188,102,7);
 }
-nav a{
-	width: 21%;
-	
+/*.kynna var notað á uppls
+*/
+.location img{
+		width: 100%;
+		height: auto;
+	}
+/*##################uppls end#####################*/
+/*##################universal#####################*/
+button a{
+	text-decoration: none;
+	color: rgb(188,102,7);
+	transition-duration: 1s;
 }
+button{
+	border: 2px solid rgb(188,102,7);
+  background: rgb(243, 221, 114);
+  font-size: 2em;
+  font-family: Indie Flower; 
+  margin-top: 0.5em;
+  cursor: pointer;
+  transition-duration: 0.5s;
+}
+button:hover{
+	border: 2px solid #ffff99;
+	border-radius: 13px;
+	background: rgb(188,102,7);
+}
+button a:hover{
+	color: rgb(243, 221, 114);
+}
+/*##################universal#####################*/
